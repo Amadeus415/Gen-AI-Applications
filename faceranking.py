@@ -1,7 +1,7 @@
 # faceranking - Rating faces based on beauty and age
 
 import requests
-from config import Config
+import os
 
 def call_faceplusplus_api(image_stream):
     """Call Face++ API and return beauty score and age"""
@@ -9,8 +9,8 @@ def call_faceplusplus_api(image_stream):
     
     files = {'image_file': image_stream}
     data = {
-        'api_key': Config.FACEPLUS_API_KEY,
-        'api_secret': Config.FACEPLUS_API_SECRET,
+        'api_key': os.getenv('FACEPLUS_API_KEY'),
+        'api_secret': os.getenv('FACEPLUS_API_SECRET'),
         'return_attributes': 'beauty,age'  # Added age attribute
     }
     
