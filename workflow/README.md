@@ -1,13 +1,19 @@
 # LLM Workflows Examples
 ## What is a Workflow?
  workflow is a structured way to use LLMs (Large Language Models) where we break down complex tasks into smaller, manageable steps. Unlike autonomous agents, workflows follow predefined paths and are more controlled. Think of it like a recipe - you know exactly what steps you'll take, in what order, and what the expected outcome should be.
+
 ## Types of Workflows & Examples
-### 1. Prompt Chaining
+
+## 1. Prompt Chaining
 reaking tasks into sequential steps, where each LLM call builds on the previous one.
- [ ] Example 1: Document Writing System
- - Generate outline
- - Review outline against criteria
- - Write full document from approved outline
+![Prompt Chain Example](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.png&w=3840&q=75)
+#### Example 1: Meal Planning System
+ Analyze user requirements and calculate nutritional needs
+ Create meal structure and timing
+ Generate specific meal options for each time slot
+ Create consolidated shopping list with alternatives
+ Format and display results with rich formatting
+
 ### 2. Parallelization
 unning multiple LLM tasks simultaneously, either by breaking into sections or getting multiple perspectives.
  [ ] Example 1: Content Moderation

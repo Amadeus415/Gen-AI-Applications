@@ -437,13 +437,13 @@ async def generate_meal_plan(user_input: Dict):
 
 # Example Usage
 user_input = {
-    "age": 30,
-    "weight": "70kg",
-    "height": "175cm",
+    "age": 23,
+    "weight": "150lbs",
+    "height": "5'10",
     "activity_level": "moderate",
-    "restrictions": ["lactose-intolerant"],
-    "goals": "weight_maintenance",
-    "health_conditions": ["low_blood_pressure"]
+    "restrictions": ["No oatmeal, no highlyprocessed foods"],
+    "goals": "build muscle",
+    "health_conditions": ["none"]
 }
 
 async def main():
