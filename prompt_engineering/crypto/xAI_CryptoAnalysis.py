@@ -51,6 +51,9 @@ completion = client.chat.completions.create(
             "social_media": "positive|negative|neutral",
             "trading_volume": "increasing|decreasing|stable",
             "market_cap_trend": "up|down|stable"
+            },
+            {
+            "date": "what is the date today"
             }
         },
         "disclaimer": "This is AI-generated analysis for informational purposes only. Not financial advice."
@@ -59,7 +62,7 @@ completion = client.chat.completions.create(
         Keep the analysis concise, factual, and focused on current market conditions. Avoid speculation and maintain a balanced perspective."""
          },
 
-        {"role": "user", "content": "$govai pidgeon tech coin"},
+        {"role": "user", "content": "$dogecoin"},
     ],
 )
 

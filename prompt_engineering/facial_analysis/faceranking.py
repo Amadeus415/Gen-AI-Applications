@@ -1,4 +1,4 @@
-# faceranking - Rating faces based on beauty and age
+# faceranking - Rating faces based on beauty and age using Face++ API
 
 import requests
 import os
